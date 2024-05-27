@@ -3,28 +3,57 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --rich-black: 13, 27, 42;
+  --oxford-blue: 27, 38, 59;
+  --yinmn-blue: 65, 90, 119;
+  --silver-lake-blue: 119, 141, 169;
+  --platinum: 224, 225, 221;
+  --foreground-rgb: 255, 255, 255;
+  --font-folor: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --font-color: 255, 255, 255;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  color: rgb(var(--font-color));
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--oxford-blue))) rgb(var(--rich-black));
 }
+
+.gradient-background {
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--yinmn-blue))) rgb(var(--rich-black));
+}
+
+.static-background {
+  background: rgba(var(--foreground-rgb), 0.7)
+}
+
+.static-background-inverted{
+  background: invert(rgba(var(--foreground-rgb)))
+}
+
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+
+
 
 @layer utilities {
   .text-balance {
