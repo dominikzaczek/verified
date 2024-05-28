@@ -2,8 +2,6 @@
 Please clone the repo or unzip the files. In the terminal run `npm install`.
 You can then start editing by running `npm run dev`
 
-Overview of the project and how to run it. Please also use this as an opportunity to list other things you would do if you had more time and what it would take to make the platform production ready.
-
 ## Technologies
 This project uses NextJS app generator as a boilerplate, including TailwindCSS. For charts, I used ChartJS library with Charts React. 
 
