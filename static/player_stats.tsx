@@ -3510,3 +3510,5 @@ const player_stats = [
       ]
     }
   ]
+
+  export default player_stats;

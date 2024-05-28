@@ -1,11 +1,17 @@
+import GameDetailsBoard from "@/app/components/GameDetails/GameDetailsBoard"
+import GameDetailsPlayers from "@/app/components/GameDetails/GameDetailsPlayers"
+
 import matches from "@/static/matches"
+import players from "@/static/players"
 
 export default function GameDetailsPage({ params }: { params: { id: number } }){
-    const matchData = matches[params.id]
 
-    if(!matchData){
-        return "KOKO"
+    if(!matches){
+        return "No matches found"
     }
     
-    return <p>{JSON.stringify(matchData)}</p>
+    return <>
+    <GameDetailsBoard data={matches} />
+    <GameDetailsPlayers players={players} teams={matches} />
+    </>
 }

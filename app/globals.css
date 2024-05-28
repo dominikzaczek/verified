@@ -8,16 +8,15 @@
   --yinmn-blue: 65, 90, 119;
   --silver-lake-blue: 119, 141, 169;
   --platinum: 224, 225, 221;
-  --foreground-rgb: 255, 255, 255;
-  --font-folor: 0, 0, 0;
+  --foreground-rgb: 0, 0, 0;
+    --font-color: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 0, 0, 0;
-    --font-color: 255, 255, 255;
+   
   }
-}
+} */
 
 body {
   color: rgb(var(--font-color));
@@ -40,6 +39,24 @@ body {
   background: invert(rgba(var(--foreground-rgb)))
 }
 
+.better-stat{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 /* TYPOGRAPHY */
 
@@ -47,13 +64,31 @@ h1 {
   font-size: 2em;
 }
 
+th h1 {
+  font-size: 1rem;
+
+  @media screen and (min-width: 64em) {
+    font-size: 2em;
+  }
+}
+
 h2 {
   font-size: 1.5em;
   margin-top: 2em;
 }
 
+button{
+  background-color: rgb(var(--silver-lake-blue));
+  color: rgb(var(--rich-black));
+  padding: 10px 5px;
+  transition: all;
+  transition-duration: 300ms;
+}
 
-
+button:hover{
+  background-color: rgb(var(--oxford-blue));
+  color: rgb(var(--platinum));
+}
 
 @layer utilities {
   .text-balance {
