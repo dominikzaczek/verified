@@ -1,37 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Assessment app
+Please clone the repo or unzip the files. In the terminal run `npm install`.
+You can then start editing by running `npm run dev`
 
-## Getting Started
+Overview of the project and how to run it. Please also use this as an opportunity to list other things you would do if you had more time and what it would take to make the platform production ready.
 
-First, run the development server:
+## Technologies
+This project uses NextJS app generator as a boilerplate, including TailwindCSS. For charts, I used ChartJS library with Charts React. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## If I had more time...
+There are many, many things that I would improve. I capped the time I wanted to spend on the project at 4 hours to give myself a challenge and see how far I could go with this time limit. At the end, I started questioning if I got my priorities right, so I am happy to discuss that during our next call. To name a few of the improvements:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# verified
+ 1. __Understand the data better__: I worked with the data out of context. If I had a chance to speak with someone who designed the structure, I think I could understand it better and come up with better ways to display it. 
+ 2. __Tidy up my styling__: At the moment, it is a mix of pre-defined colours (of a palette that I found online) and the built-in classes that come with Tailwind.
+ 3. __Assets__: I would like to use more assets to make the website more visually attractive. For example, team logos instead of "Team 1", "Team 2" in the mobile version of the players list. 
+ 4. __Improve accessibility__: I believe that accessibility could be improved. The contrast between the key elements is good yet I would like to spend more time to make sure that the experience is equally engaging for different users.
