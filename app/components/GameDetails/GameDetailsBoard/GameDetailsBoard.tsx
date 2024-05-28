@@ -20,14 +20,14 @@ function GameDetailsTable({ team1, team2 }:{team1:Team, team2:Team}) {
           const team1Better = team1.stats[key] > team2.stats[key]
           return <tr key={`team-stat-${key}`}>
             <td className="text-center p-2">
-              <p className="text-sm ">{name}</p>
+              <p className="text-sm xl:hidden">{name}</p>
               <p className={`${team1Better ? "better-stat rounded-xl" : "rounded-xl"}`}>{team1.stats[key]}</p>
             </td>
             <td className="text-center p-2 hidden lg:table-cell">
               {name}
             </td>
             <td className="text-center p-2">
-              <p className="text-sm">{name}</p>
+              <p className="text-sm xl:hidden">{name}</p>
               <p className={`${!team1Better ? "better-stat rounded-xl" : "rounded-xl"}`}>{team2.stats[key]}</p>
             </td>
           </tr>

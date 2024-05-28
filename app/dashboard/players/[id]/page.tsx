@@ -40,7 +40,7 @@ function OtherPlayersInTeam({teamId}:{teamId:number}) {
 
     return <>
     <h2>Other players in the team</h2>
-    <div className="grid grid-cols-1 xl:grid-cols-3 mt-5">
+    <div className="grid grid-cols-1 xl:grid-cols-3 mt-5 gap-4">
         {playersInTeam.map((player, key) => {
             return <SinglePlayer data={player} key={`player-${key}`}/>
         })}
